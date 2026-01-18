@@ -33,11 +33,11 @@ The system utilizes a complex Event-Driven Architecture (EDA) coupled with a Sin
 ```mermaid
 graph TD
     User((User)) -->|Click Event| DOM[DOM Button Layer]
-    DOM -->|Dispatch| Logic[Business Logic Core (script.js)]
+    DOM -->|Dispatch| Logic["Business Logic Core (script.js)"]
     Logic -->|Read State| State{Global State Store}
     State -->|Integer Math| ALU[Arithmetic Logic Unit]
     ALU -->|New Value| State
-    State -->|Re-render| UI[Presentation Layer (index.html)]
+    State -->|Re-render| UI["Presentation Layer (index.html)"]
     
     subgraph "The Danger Zone"
     Logic
