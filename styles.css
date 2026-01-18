@@ -3,11 +3,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     background-color: #f0f0f0;
 }
 
 .button-array {
     display: flex;
     gap: 15px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-label {
+    font-size: 14px;
+    color: #555;
 }
