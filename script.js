@@ -11,7 +11,31 @@ function incrementCount() {
 }
 
 function setToZero() {
-    count.innerHTML = 0;
+    let start = count.innerHTML;
+    let intervalMS = 25;
+    let countLoop;
+
+    if(start > 0){
+        countLoop = setInterval(function(){
+            count.innerHTML = count.innerHTML - 1;
+
+            if(count.innerHTML == 0){
+                clearInterval(countLoop);
+                count.innerHTML = 0;
+            }
+        }, intervalMS);
+    } else if (start < 0){
+        countLoop = setInterval(function() {
+            count.innerHTML = parseInt(count.innerHTML) + 1;
+
+            if(count.innerHTML == 0){
+                clearInterval(countLoop);
+                count.innerHTML = 0;
+            }
+        }, intervalMS);
+    } else {
+        window.alert("Count already at 0!");
+    }
 }
 
 function countTo100() {
