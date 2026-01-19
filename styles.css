@@ -48,6 +48,7 @@ body {
 }
 
 button {
+    position: relative;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -55,12 +56,36 @@ button {
     color: white;
     cursor: pointer;
     font-size: 16px;
+    overflow: hidden;
+}
+
+/* image layer */
+button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("ai-baby-meme.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+/* text stays above image */
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+button:hover::after {
+    opacity: 1;
 }
 
 button:hover {
-    background-color: #0056b3;
-    transition: background-color 0.8s;
+    text-shadow: black 1px 1px 2px;
 }
+
 
 input {
     padding: 8px;
