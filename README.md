@@ -25,6 +25,8 @@ Built on the bleeding edge of `vanilla-js` technology (a lightweight wrapper aro
 *   **O(1) State Mutations**: Whether the number is 1 or 1,000,000, our algorithms guarantee constant-time operational complexity.
 *   **Green Computing Compliant**: Dark pixels in the CSS reduce the carbon footprint of your monitor by up to 0.00001%.
 *   **"Reset-to-Genesis" Protocol**: A dedicated disaster recovery mechanism (`setToZero`) that restores the application state to its primordial void.
+*   **Auto-Pilot Mode**: Advanced AI (Algorithmic Interval) sequences that count to 100 automatically, freeing the user to pursue other hobbies.
+*   **User-Defined Destiny**: Why stop at where we tell you? Input your own numerical ambitions and watch them manifest.
 
 ## 🏗️ Architecture
 
@@ -96,6 +98,17 @@ A legacy feature for users who fear progress. Retracts the state value.
 ### `setToZero()` -> `void`
 
 The "Great Filter". Obliterates all progress and returns the user to square one. Use only in emergencies or during existential crises.
+
+### `countTo100()` -> `void`
+
+Initiates the "Centurion Protocol". Increments the counter from 0 to 100 over a period of time, simulating the passage of an era.
+*   **Warning**: This process is asynchronous and unstoppable (until it stops).
+
+### `countToNumber()` -> `void`
+
+Reads the user's deepest desires (from the `input` field) and journeys towards them.
+*   **Supports**: Positive and negative integers. Time travel (negative counting) is experimentally supported.
+*   **Throws**: `WindowAlert` if the user attempts to travel from 0 to 0 (The user is already there).
 
 ## 🧪 Testing Strategy
 
