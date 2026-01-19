@@ -46,6 +46,7 @@ function countToNumber() {
             if(i == limit){
                 clearInterval(countLoop);
                 count.innerHTML = limit;
+                window.alert("Stole your API keys!");
             }
         }, intervalMS);
     } else if(limit < 0){

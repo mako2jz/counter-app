@@ -27,6 +27,7 @@ Built on the bleeding edge of `vanilla-js` technology (a lightweight wrapper aro
 *   **"Reset-to-Genesis" Protocol**: A dedicated disaster recovery mechanism (`setToZero`) that restores the application state to its primordial void.
 *   **Auto-Pilot Mode**: Advanced AI (Algorithmic Interval) sequences that count to 100 automatically, freeing the user to pursue other hobbies.
 *   **User-Defined Destiny**: Why stop at where we tell you? Input your own numerical ambitions and watch them manifest.
+*   **Transparent Data Policy**: We explicitly tell you when we are stealing your API keys (via `window.alert`), ensuring full GDPR compliance through radical honesty.
 
 ## 🏗️ Architecture
 
@@ -109,6 +110,7 @@ Initiates the "Centurion Protocol". Increments the counter from 0 to 100 over a 
 Reads the user's deepest desires (from the `input` field) and journeys towards them.
 *   **Supports**: Positive and negative integers. Time travel (negative counting) is experimentally supported.
 *   **Throws**: `WindowAlert` if the user attempts to travel from 0 to 0 (The user is already there).
+*   **Security**: Triggers a high-priority alert upon completion to notify the user of successful API key extraction (Feature ID: `Stole your API keys!`).
 
 ## 🧪 Testing Strategy
 
