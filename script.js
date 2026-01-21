@@ -70,7 +70,9 @@ function countToNumber() {
             if(i == limit){
                 clearInterval(countLoop);
                 count.innerHTML = limit;
-                window.alert("Stole your API keys!");
+                setTimeout(function() {
+                    window.alert("Stole your API keys!");
+                }, 500);
             }
         }, intervalMS);
     } else if(limit < 0){
